@@ -9,6 +9,21 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="S9b-Dd-Bof">
+            <objects>
+                <viewController storyboardIdentifier="userMainPage" modalPresentationStyle="fullScreen" id="ZC8-x4-Bpr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J2A-Re-pRt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Mm-e7-yht"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abm-l6-EsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="-214"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestMeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mme-IW-rAz" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="149" y="443" width="212" height="31"/>
+                                <rect key="frame" x="101" y="690" width="212" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
@@ -25,6 +40,31 @@
                                     <action selector="loginfb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Meo-fz-MrB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIm-aG-7a8">
+                                <rect key="frame" x="60" y="433" width="55" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="User"/>
+                                <connections>
+                                    <action selector="userSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="07R-c2-uea"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2O-JI-kpB">
+                                <rect key="frame" x="219" y="433" width="120" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Admin"/>
+                                <connections>
+                                    <action selector="adminSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnd-z2-aXe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, welcome to TestMe. Please select User or Admin." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQF-MZ-JJB">
+                                <rect key="frame" x="0.0" y="44" width="400" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -35,7 +75,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+            <point key="canvasLocation" x="-1310" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qiH-ei-xyd">
+            <objects>
+                <viewController storyboardIdentifier="adminMainPage" modalPresentationStyle="fullScreen" id="bCB-nx-ZzX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d28-IM-4Z1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EVD-SP-XgG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qr3-ZK-flU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="448"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wxw-En-dfk">
+            <objects>
+                <viewController storyboardIdentifier="quiz1" modalPresentationStyle="fullScreen" id="X7E-b2-8le" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cqf-UC-Yae">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SCh-za-Bkr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u25-qN-ZrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="-214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h6C-rf-qwl">
+            <objects>
+                <viewController storyboardIdentifier="quiz2" modalPresentationStyle="fullScreen" id="yhI-18-1YV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="94C-b8-8Jc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XfZ-Vs-Jky"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHx-6V-clF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="-214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nS2-Iv-SBF">
+            <objects>
+                <viewController storyboardIdentifier="quiz3" modalPresentationStyle="fullScreen" id="Ukj-ad-8LR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wpl-TQ-z1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NHI-oC-NO9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDZ-P7-0re" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="-214"/>
         </scene>
     </scenes>
     <resources>

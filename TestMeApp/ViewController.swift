@@ -44,5 +44,17 @@ class ViewController: UIViewController , LoginButtonDelegate {
 
     @IBAction func loginfb(_ sender: Any) {
     }
+    
+    
+    @IBAction func userSettings(_ sender: Any) {
+        let nextViewContoller = storyboard?.instantiateViewController(withIdentifier: "userMainPage") as! UIViewController
+        self.present(nextViewContoller, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func adminSettings(_ sender: Any) {
+        let nextViewContoller = storyboard?.instantiateViewController(withIdentifier: "userMainPage") as! UIViewController
+        self.present(nextViewContoller, animated: true, completion: nil)
+    }
 }
 
