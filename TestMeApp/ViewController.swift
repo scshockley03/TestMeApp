@@ -56,5 +56,20 @@ class ViewController: UIViewController , LoginButtonDelegate {
         let nextViewContoller = storyboard?.instantiateViewController(withIdentifier: "userMainPage") as! UIViewController
         self.present(nextViewContoller, animated: true, completion: nil)
     }
+    
+    @IBAction func javaQuiz(_ sender: Any) {
+        let nextViewContoller = storyboard?.instantiateViewController(withIdentifier: "quiz1") as! UIViewController
+        self.present(nextViewContoller, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func swiftQuiz(_ sender: Any) {
+        let nextViewContoller = storyboard?.instantiateViewController(withIdentifier: "quiz2") as! UIViewController
+        self.present(nextViewContoller, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func tech3Quiz(_ sender: Any) {
+    }
 }
 
